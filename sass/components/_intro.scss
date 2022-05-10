@@ -1,0 +1,67 @@
+.intro{
+    margin: 30px auto;
+    width: 90%;
+    height: 650px;
+    padding: .7rem;
+    position: relative;
+    border-radius: 5px;
+    background: $color-secundario;
+    @include shadow();
+
+    &__imagen{
+        width: 98.5%;
+        position: absolute;
+        img{
+            width: 100%;
+            height: 624px;
+            object-fit: cover;
+        }
+    }
+    &__contenido {
+        width: 50%;
+        margin: 0 auto;
+        position: absolute;
+        top: 156px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: $color-claro;
+    }
+    &__categoria{
+        font-family: $fuente2;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include Opacity(0.5);
+    }
+    &__titulo{
+        font-family: $fuente2;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include font-size(50px);
+    }
+    &__autor{
+        font-family: $fuente2;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 150px;
+        margin: 0 auto;
+        position: absolute;
+        top: 450px;
+        left: 0;
+        right: 0;
+        color: $color-claro;
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            padding-right: 10px;
+            float: left;
+        }
+        span{
+            display: inline-block;
+        }
+        &-titulo{
+            @include Opacity(0.5);
+        }
+    }
+}

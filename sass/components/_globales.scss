@@ -37,6 +37,13 @@ $color-terciario: #012179;
     font-size: calculateRem($size);
     line-height: calculateRem($size)*1.5;	
 }
+
+@mixin Opacity($value){
+    $IEValue: $value*100;
+    opacity: $value;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+    filter: alpha(opacity=$IEValue);
+  }
 // Funciones
 
 @function calculateRem($size){

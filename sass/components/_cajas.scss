@@ -1,0 +1,32 @@
+.contenedor--cajas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 20rem;
+    border-radius: 10px;
+    @include box(); 
+    &-img-top{
+        border-radius: 10px 10px 0 0;
+    }
+    &-title{
+        font-family: $fuente2;
+        color: $color-secundario;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include font-size(18px);
+    }
+    p{
+        @include font-size(18px);
+    }
+    .btn{
+        margin: 0;
+        padding: 0;
+        font-family: $fuente2;
+        color: $color-terciario;
+        @include font-size(18px);
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
