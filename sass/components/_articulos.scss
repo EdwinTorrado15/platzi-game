@@ -1,0 +1,43 @@
+nav {
+  @include shadow();
+  .navbar {
+    font-family: $fuente1;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid get-opacity($color-claro, 0.4);
+  }
+  .navbar-nav {
+    .nav-link {
+      color: $color-secundario;
+      @include titulos($fuente2);
+
+      &:hover {
+        color: $color-secundario;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+form {
+  .form-control {
+    border: 1px solid get-opacity($color-primario, 0.5);
+    &:focus {
+      box-shadow: none;
+      border: 1px solid get-opacity($color-primario, 1);
+    }
+  }
+  .btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-secundario;
+    @include titulos($fuente2);
+    &:hover {
+      color: $color-secundario;
+      text-decoration: underline;
+    }
+    i {
+      font-size: 15px;
+      padding-left: 5px;
+    }
+  }
+}

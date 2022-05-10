@@ -1,0 +1,60 @@
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&display=swap');
+$fuente1: 'Lato', sans-serif;
+$fuente2: 'oswald', sans-serif;
+
+// Colores
+$color-claro: #fff;
+$color-primario: #333;
+$color-secundario: #8841da;
+$color-terciario: #012179;
+
+// Mixin
+@mixin box {
+    border-radius: 20px;
+    box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, .5);
+    color: $color-primario;
+    background: $color-claro;
+}
+
+@mixin titulos($fuente) {
+	@if $fuente ==$fuente1 {
+		font-family: $fuente1;
+	} @else {
+		font-family: $fuente2;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+@mixin shadow(){
+    box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, .2);
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size)*1.5;	
+}
+// Funciones
+
+@function calculateRem($size){
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+
+@function get-opacity ($color, $level) {
+    @return rgba($color, $level);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    @include titulos($fuente1);
+    @include font-size(18px);
+}
