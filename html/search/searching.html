@@ -6,141 +6,193 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
-      <link rel="stylesheet" href="../../css/article.css">
-      <link rel="stylesheet" href="../../css/profile.css">
-      <link rel="stylesheet" href="../../css/searching.css">
-      <link rel="stylesheet" href="../../css/platzi-games.css">
-      <script src="https://kit.fontawesome.com/552ebddad2.js"></script>
+      <link rel="stylesheet" href="/css/index.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     </head>
     <body></body>
   </html>
   <body>
-    <header class="header--principal">
-      <div class="logo logo--header"><img src="../../resources/images/logo--footer.svg"></div>
-      <nav class="nav--header">
-        <ul>
-          <li><a class="nav__link" href="https://crissud.github.io/PlatziGames/html/main/pagina-principal.html">Inicio</a></li>
-          <li><a class="nav__link" href="https://crissud.github.io/PlatziGames/html/profile/profile.html">Perfil</a></li>
-          <li><a class="nav__link" href="https://crissud.github.io/PlatziGames/html/article/articulo.html">Artículos</a></li>
-          <li><a class="nav__link" href="https://crissud.github.io/PlatziGames/html/search/searching.html">Búsquedas</a></li>
-          <li><a class="nav__link" href="#">Mobile</a></li>
-        </ul>
-      </nav><a class="header__busqueda" href="#"><i class="fas fa-search"></i><span>Search</span></a>
-      <div class="menu-btn">
-        <button class="button__menu">
-          <figure><img src="../../resources/images/menu.png" alt="menu"></figure>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo--header.svg" alt="logo" width="150" class="mx-auto d-block">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/html/main/pagina-principal.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/profile/profile.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/article/articulo.html">Articulos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/search/searching.html">Busquedas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mobile</a>
+            </li>
+          </ul>
+            <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <a class="btn d-flex align-items-center" type="submit">Search<i class="fas fa-search"></i><span></span></a>
+            </form>
+        </div>
       </div>
-    </header>
-    <div class="buscador">
+    </nav>
+
+    <header>
+      <div class="buscador">
       <form>
         <input class="buscador__input" type="text" placeholder="Playstation">
       </form>
     </div>
+    </header>
+
     <header class="encabezado--con-filtros">
       <h2>20 Resultados para "PlayStation"</h2>
       <div class="filtros"><span>Filtrar Por</span><a class="fa fa-th-large" href="#"></a><a class="fa fa-bars" href="#"></a></div>
     </header>
-    <section class="contenido">
-        <div class="caja"><a class="caja__imagen" href="#"><img src="../../resources/images/apex.jpg"></a>
-          <div class="caja__contenido"><span class="caja__categoria">Video</span>
-            <h3>Apex Legends Temporada 2: un nuevo trailer muestra cambios al mapa</h3>
-            <p>Dos nuevos trailers de Apex Legends muestran lo que nos espera en la Temporada 2 del battle royale de Respawn.</p>
-          </div>
-            <div class="estadistica--articulos">
-              <ul>
-                <li><i class="fas fa-share"></i><span>275</span></li>
-                <li><i class="fas fa-eye"></i><span>275</span></li>
-                <li><i class="fas fa-comment-alt"></i><span>12</span></li>
-              </ul>
-            </div>
+
+    <section class="container">
+      <div class="row justify-content-center">
+        
+      <div class="card">
+        <img src="/images/apex.jpg" class="card-img-top img-fluid" alt="xbox">
+        <div class="card-body">
+          <h3 class="card-title">Apex Legends Temporada 2: un nuevo trailer muestra cambios al mapa</h3>
+          <p class="card-text">Dos nuevos trailers de Apex Legends muestran lo que nos espera en la Temporada 2 del battle royale de Respawn.</p>
+          <a href="#" class="btn">Leer Mas</a>
         </div>
-        <div class="caja"><a class="caja__imagen" href="#"><img src="../../resources/images/crash.jpg"></a>
-          <div class="caja__contenido"><span class="caja__categoria">Video</span>
-            <h3>Ya salio la reseña de Crash Team Racing Nitro Fueled</h3>
-            <p>Veinte años después del lanzamiento del original, Crash Team Racing ha recibido un remake total que logra mantener todos los aspectos originales.</p>
-          </div>
-            <div class="estadistica--articulos">
-              <ul>
-                <li><i class="fas fa-share"></i><span>275</span></li>
-                <li><i class="fas fa-eye"></i><span>275</span></li>
-                <li><i class="fas fa-comment-alt"></i><span>12</span></li>
-              </ul>
-            </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
         </div>
-        <div class="caja"><a class="caja__imagen" href="#"><img src="../../resources/images/ff.jpg"></a>
-          <div class="caja__contenido"><span class="caja__categoria">Video</span>
-            <h3>Final Fantasy XIV recibirá una serie live-action en televisión </h3>
-            <p>Final Fantasy XIV Online recibirá una adaptación aTV de parte de Square Enix con Sony Pictures Television y Hivemind.</p>
-          </div>
-            <div class="estadistica--articulos">
-              <ul>
-                <li><i class="fas fa-share"></i><span>275</span></li>
-                <li><i class="fas fa-eye"></i><span>275</span></li>
-                <li><i class="fas fa-comment-alt"></i><span>12</span></li>
-              </ul>
-            </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/crash.jpg" class="card-img-top img-fluid" alt="xbox">
+        <div class="card-body">
+          <h3 class="card-title">Ya salio la reseña de Crash Team Racing Nitro Fueled</h3>
+          <p class="card-text">Veinte años después del lanzamiento del original, Crash Team Racing ha recibido un remake total que logra mantener todos los aspectos originales.</p>
+          <a href="#" class="btn">Leer Mas</a>
         </div>
-        <div class="caja">
-          <div class="caja__contenido"><span class="caja__categoria">noticias</span>
-            <h3>pes 2020 obtiene acuerdo con el manchester united</h3>
-            <p>Konami ha anunciado que han firmado un acuerdo con el club de futbol inglés Manchester United para ser incluido en el juego.</p>
-          </div>
-            <div class="estadistica--articulos">
-              <ul>
-                <li><i class="fas fa-share"></i><span>275</span></li>
-                <li><i class="fas fa-eye"></i><span>275</span></li>
-                <li><i class="fas fa-comment-alt"></i><span>12</span></li>
-              </ul>
-            </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
         </div>
-        <div class="caja">
-          <div class="caja__contenido"><span class="caja__categoria">noticias</span>
-            <h3>cyberpunk: habrá dos juegos más</h3>
-            <p>El estudio polaco de videojuegos CD Projekt está trabajando no en uno, sino en tres juegos ubicados en el universo RPG de Cyberpunk.</p>
-          </div>
-            <div class="estadistica--articulos">
-              <ul>
-                <li><i class="fas fa-share"></i><span>275</span></li>
-                <li><i class="fas fa-eye"></i><span>275</span></li>
-                <li><i class="fas fa-comment-alt"></i><span>12</span></li>
-              </ul>
-            </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/ff.jpg" class="card-img-top img-fluid" alt="xbox">
+        <div class="card-body">
+          <h3 class="card-title">Final Fantasy XIV recibirá una serie live-action en televisión </h3>
+          <p class="card-text">Final Fantasy XIV Online recibirá una adaptación aTV de parte de Square Enix con Sony Pictures Television y Hivemind.</p>
+          <a href="#" class="btn">Leer Mas</a>
         </div>
-        <div class="caja">
-          <div class="caja__contenido"><span class="caja__categoria">noticias</span>
-            <h3>Mortal Kombat 11: Filtración confirma al Joker como DLC</h3>
-            <p>Usuarios han investigado el más reciente parche de la versión para PC de Mortal Kombat 11 donde se incluyen datos del Joker, Terminator.</p>
-          </div>
-            <div class="estadistica--articulos">
-              <ul>
-                <li><i class="fas fa-share"></i><span>275</span></li>
-                <li><i class="fas fa-eye"></i><span>275</span></li>
-                <li><i class="fas fa-comment-alt"></i><span>12</span></li>
-              </ul>
-            </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
         </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">pes 2020 obtiene acuerdo con el manchester united</h3>
+          <h6 class="card-subtitle mb-2 text-muted">noticias</h6>
+          <p class="card-text">Konami ha anunciado que han firmado un acuerdo con el club de futbol inglés Manchester United para ser incluido en el juego.</p>
+          <a href="#" class="btn">Leer Mas</a>
+        </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">cyberpunk: habrá dos juegos más</h3>
+          <h6 class="card-subtitle mb-2 text-muted">noticias</h6>
+          <p class="card-text">El estudio polaco de videojuegos CD Projekt está trabajando no en uno, sino en tres juegos ubicados en el universo RPG de Cyberpunk.</p>
+          <a href="#" class="btn">Leer Mas</a>
+        </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Mortal Kombat 11: Filtración confirma al Joker como DLC</h3>
+          <h6 class="card-subtitle mb-2 text-muted">noticias</h6>
+          <p class="card-text">Usuarios han investigado el más reciente parche de la versión para PC de Mortal Kombat 11 donde se incluyen datos del Joker, Terminator.</p>
+          <a href="#" class="btn">Leer Mas</a>
+        </div>
+        <div class="estadistica--articulos">
+          <ul>
+            <li><i class="fas fa-share"></i><span>275</span></li>
+            <li><i class="fas fa-eye"></i><span>275</span></li>
+            <li><i class="fas fa-comment-alt"></i><span>12</span></li>
+          </ul>
+        </div>
+      </div>
+
+      </div>
     </section>
+
     <footer class="footer">
       <div class="footer__container">
-        <div class="logo logo--footer"><img src="../../resources/images/logo--footer.svg"></div>
+        <div class="logo logo--footer"><img src="/images/logo--footer.svg"></div>
         <nav class="nav--footer">
           <ul>
-            <li><a href="#">Playstation</a></li>
-            <li><a href="#">Xbox</a></li>
-            <li><a href="#">Nintendo</a></li>
-            <li><a href="#">PC</a></li>
-            <li><a href="#">Mobile</a></li>
+            <li><a href="https://acortar.link/vvXmyi" target="_blank">Playstation</a></li>
+            <li><a href="https://www.xbox.com/es-CO" target="_blank">Xbox</a></li>
+            <li><a href="https://www.nintendo.com/es_CO/" target="_blank">Nintendo</a></li>
+            <li><a href="https://store.steampowered.com/?l=spanish" target="_blank">Steam</a></li>
+            <li><a href="https://www.epicgames.com/site/es-ES/home" target="_blank">Epic games</a></li>
           </ul>
         </nav>
         <div class="nav--social">
           <ul>
             <li>Siguenos</li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+            <li>
+              <a href="https://www.instagram.com/edwintorrado/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/edwintorrado15/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+
+            <li>
+              <a href="https://github.com/EdwinTorrado15" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/edwinandres.torradobotia" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -148,6 +200,7 @@
         <p>© 2020 Derechos reservados CrissUD</p>
       </div>
     </footer>
+
     <script src="/js/app.js"></script>
   </body>
 </html>
